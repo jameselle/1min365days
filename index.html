@@ -20,6 +20,10 @@
   a.tool b { display: block; font-size: 18px; }
   a.tool small { color: var(--dim); font-size: 15px; }
   .day { color: var(--accent); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
+  .follow { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+  a.acct { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; color: var(--ink); text-decoration: none; font-weight: 700; font-size: 16px; }
+  a.acct small { display: block; color: var(--dim); font-weight: 400; font-size: 14px; }
+  a.acct:hover, a.acct:focus-visible { border-color: var(--accent); outline: none; }
   footer { color: var(--dim); font-size: 14px; border-top: 1px solid var(--line); padding-top: 18px; display: flex; flex-wrap: wrap; gap: 8px 18px; }
   footer a { color: var(--dim); }
 </style>
@@ -31,6 +35,15 @@
   </header>
   <p class="lede">Building a business worth a million dollars in a year, in public. Every day, one AI tool that runs part of the business, and the code is free.</p>
   <section>
+    <h2>Follow the series</h2>
+    <div class="follow">
+      <a class="acct" href="https://www.instagram.com/jameselle/">Instagram<small>@jameselle</small></a>
+      <a class="acct" href="https://www.tiktok.com/@jimthe1">TikTok<small>@jimthe1</small></a>
+      <a class="acct" href="https://www.youtube.com/@jamesellebuilds">YouTube<small>@jamesellebuilds</small></a>
+      <a class="acct" href="https://x.com/EllerineJames">X<small>@EllerineJames</small></a>
+    </div>
+  </section>
+  <section>
     <h2>The free tools</h2>
     <div class="tools">
       <a class="tool" href="https://github.com/jameselle/clipper"><span class="day">Day 1</span><b>Clipper</b><small>Long video in, short vertical clips out: pop captions, hooks, screen footage over your voice, and checks on every clip.</small></a>
@@ -40,7 +53,6 @@
     </div>
   </section>
   <footer>
-    <a href="https://www.instagram.com/jameselle/">Instagram @jameselle</a>
     <a href="https://github.com/jameselle">GitHub</a>
     <a href="privacy.html">Privacy policy</a>
     <a href="delete.html">Delete your data</a>
